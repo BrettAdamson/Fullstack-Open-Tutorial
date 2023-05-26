@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for fullstack-open-tutorial on 2023-05-20T19:18:33-05:00
+# fly.toml app configuration file generated for fullstack-open-tutorial on 2023-05-25T20:48:52-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = "fullstack-open-tutorial"
-primary_region = "yyz"
+primary_region = "yul"
 
 [http_service]
   internal_port = 8080
@@ -18,5 +18,3 @@ primary_region = "yyz"
 
 [experimental]
   auto_rollback = true
-
-
