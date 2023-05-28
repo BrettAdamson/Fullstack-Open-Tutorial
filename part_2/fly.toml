@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for fullstack-open-tutorial on 2023-05-25T20:48:52-05:00
+# fly.toml app configuration file generated for fullstack-open-tutorial on 2023-05-28T17:45:39-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -6,15 +6,16 @@
 app = "fullstack-open-tutorial"
 primary_region = "yul"
 
+[experimental]
+  auto_rollback = true
+
+[env]
+  PORT = "8080"
+
 [http_service]
   internal_port = 8080
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
   min_machines_running = 0
-    processes = ["app"]
-[env]
-  PORT = "8080" # add this
-
-[experimental]
-  auto_rollback = true
+  processes = ["app"]
